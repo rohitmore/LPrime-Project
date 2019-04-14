@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="luminous-prime:war">
+    <output-path>$PROJECT_DIR$/LPrime/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>luminous-prime</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="luminous-prime-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="luminous-prime:war exploded" />
+    </root>
+  </artifact>
+</component>

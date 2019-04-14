@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LPrime.iml" filepath="$PROJECT_DIR$/LPrime.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LPrime-UI/LPrime-UI.iml" filepath="$PROJECT_DIR$/LPrime-UI/LPrime-UI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/angular-commerce/angular-commerce.iml" filepath="$PROJECT_DIR$/angular-commerce/angular-commerce.iml" />
       <module fileurl="file://$PROJECT_DIR$/LPrime/luminous-prime.iml" filepath="$PROJECT_DIR$/LPrime/luminous-prime.iml" />
     </modules>
   </component>

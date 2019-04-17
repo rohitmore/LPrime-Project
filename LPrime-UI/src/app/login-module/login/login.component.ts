@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService, GoogleLoginProvider, SocialUser} from "angularx-social-login";
+import {AuthService, FacebookLoginProvider, GoogleLoginProvider, SocialUser} from "angularx-social-login";
 import * as consts from './../../constants/string-constants';
 import {FormControl, Validators} from "@angular/forms";
 
@@ -32,7 +32,10 @@ export class LoginComponent implements OnInit {
   }
 
   signInWithFB(): void {
-    console.log("inside Facebook");
+    console.log("inside Sign In Facebook");
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID).then( (userData) => {
+      this.user = userData;
+    });
   }
 
   signInWithGoogle(): void {

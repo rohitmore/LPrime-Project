@@ -1,0 +1,26 @@
+.full-width {
+    width: 100%;
+    outline: none;
+}
+
+.background-grey {
+    background-color: #FEEDF6;
+}
+
+.facebook-button .google-button {
+    color: darkblue;
+    font-size: 33px !important;
+    margin-right: 10px;
+}
+
+.login-card {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+.line-divider {
+    border-bottom: deeppink 1px solid;
+    width: 100px;
+
+}

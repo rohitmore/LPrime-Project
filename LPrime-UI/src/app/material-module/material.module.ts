@@ -4,7 +4,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatCheckboxModule, MatDividerModule,
-  MatIconModule,
+  MatIconModule, MatInputModule,
   MatMenuModule,
   MatToolbarModule,
   MatTooltipModule
@@ -20,7 +20,8 @@ import {
     MatCardModule,
     MatBadgeModule,
     MatDividerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatInputModule
   ],
   exports: [
     MatButtonModule,
@@ -31,7 +32,8 @@ import {
     MatCardModule,
     MatBadgeModule,
     MatDividerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatInputModule
   ]
 })
 export class MaterialModule { }

@@ -1,0 +1,80 @@
+<div class="app-body background-grey">
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <mat-card fxFlex="20%" class="login-card">
+      <mat-card-header class="info-color white-text text-center py-4">
+        <mat-card-title>Login to {{ constants.COMPANY_NAME}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content style="padding: 10px" fxLayout="column" fxLayoutGap="15px">
+
+        <form fxLayout="column" fxLayoutGap="10px">
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Email" [formControl]="emailFormControl">
+            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error *ngIf="emailFormControl.hasError('required')">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Password" type="password" [formControl]="passwordFormControl">
+            <mat-error *ngIf="passwordFormControl.hasError('required')">
+              Password is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="accent" class="full-width">Login</button>
+        </form>
+
+        <hr class="line-divider" />
+
+        <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between center">
+          <a href="/forget-password">Forget Password </a>
+          <a href="/sign-up">Sign up</a>
+        </div>
+
+        <hr class="line-divider" />
+
+        <div fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-between center">
+          <button mat-raised-button class="full-width" (click)="signInWithFB()"><i class="fa fa-facebook-official facebook-button "></i> Facebook </button>
+          <button mat-raised-button class="full-width" (click)="signInWithGoogle()"><i class="fa fa-google google-button"></i> Google </button>
+        </div>
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+
+<!--<div class="jumbotron bg-transparent text-center">-->
+  <!--<div *ngIf="!user" class="card text-center">-->
+    <!--<h6 class="card-header">-->
+      <!--Social Login Demo-->
+    <!--</h6>-->
+    <!--<div class="card-block">-->
+      <!--<h4 class="card-title">Not signed in</h4>-->
+      <!--<p class="card-text">Sign in with</p>-->
+    <!--</div>-->
+    <!--<div class="card-block">-->
+      <!--<button class="btn btn-social-icon btn-google mx-1" (click)="signInWithGoogle()">Google<span class="fa fa-google"></span></button>-->
+      <!--&lt;!&ndash;<button class="btn btn-social-icon btn-facebook mx-1" (click)="signInWithFB()"><span class="fa fa-facebook"></span></button>&ndash;&gt;-->
+      <!--&lt;!&ndash;<button class="btn btn-social-icon btn-linkedin mx-1" (click)="signInWithLinkedIn()"><span class="fa fa-linkedin"></span></button>&ndash;&gt;-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div *ngIf="user" class="card text-center">-->
+    <!--<h6 class="card-header">-->
+      <!--Social Login Demo-->
+    <!--</h6>- -->
+    <!--<div class="card-block"></div>-->
+    <!--<img class="card-img-top img-responsive photo" src="{{ user.photoUrl }}">-->
+    <!--<div class="card-block">-->
+      <!--<h4 class="card-title">{{ user.name }}</h4>-->
+      <!--<p class="card-text">{{ user.email }}</p>-->
+    <!--</div>-->
+    <!--<div class="card-block">-->
+      <!--<button class="btn btn-danger" (click)="signOut()">Sign out</button>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

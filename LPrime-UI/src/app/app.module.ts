@@ -3,16 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginModuleComponent } from './login-module/login-module.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
 import { GoogleLoginProvider} from "angularx-social-login";
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import {FlexLayoutModule} from "@angular/flex-layout";
-import {MaterialModule} from "./material-module/material.module";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MaterialModule } from "./material-module/material.module";
 import { SearchBarComponent } from './nav-bar/search-bar/search-bar.component';
 import { MenusDropdownComponent } from './nav-bar/menus-dropdown/menus-dropdown.component';
+import { LoginModule } from "./login-module/login.module";
 
 let config = new AuthServiceConfig([
   {
@@ -25,11 +25,9 @@ export function provideConfig() {
   return config;
 }
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    LoginModuleComponent,
     ProductListComponent,
     NavBarComponent,
     SearchBarComponent,
@@ -41,8 +39,8 @@ export function provideConfig() {
     AppRoutingModule,
     BrowserAnimationsModule,
     SocialLoginModule,
-    FlexLayoutModule
-
+    FlexLayoutModule,
+    LoginModule
   ],
   providers: [
     {

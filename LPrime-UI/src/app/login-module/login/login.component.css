@@ -7,6 +7,7 @@
 .body-config {
     background-color: #FEEDF6;
     padding-bottom: 30px;
+    text-decoration: none;
 }
 
 .facebook-button {
@@ -30,5 +31,9 @@
 .line-divider {
     border-bottom: deeppink 1px solid;
     width: 100px;
+}
 
+.no-outline {
+    text-decoration: none;
+    color: indianred;
 }

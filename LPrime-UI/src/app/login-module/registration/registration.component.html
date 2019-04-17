@@ -2,7 +2,7 @@
   <div fxLayout="row" fxLayoutAlign="center center">
     <mat-card fxFlex="20%" class="login-card">
       <mat-card-header class="info-color white-text text-center py-4">
-        <mat-card-title>Login to {{ constants.COMPANY_NAME}}</mat-card-title>
+        <mat-card-title>Sign up For {{ constants.COMPANY_NAME}}</mat-card-title>
       </mat-card-header>
       <mat-card-content style="padding: 10px" fxLayout="column" fxLayoutGap="15px">
 
@@ -24,14 +24,23 @@
             </mat-error>
           </mat-form-field>
 
-          <button mat-raised-button color="accent" class="full-width">Login</button>
+          <mat-form-field class="full-width">
+            <input matInput placeholder="Mobile Number" [formControl]="contactNumberFormControl">
+            <mat-error *ngIf="contactNumberFormControl.hasError('pattern') && !contactNumberFormControl.hasError('required')">
+              Mobile Number should not be more than 10 digit
+            </mat-error>
+            <mat-error *ngIf="contactNumberFormControl.hasError('required')">
+              Mobile Number is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <button mat-raised-button color="accent" class="full-width">Register</button>
         </form>
 
         <hr class="line-divider" />
 
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between center">
-          <a href="/forget-password" class="no-outline">Forget Password </a>
-          <a href="/sign-up" class="no-outline">Sign up</a>
+          You already have an Account <a href="/forget-password" class="no-outline">Login </a>
         </div>
 
         <hr class="line-divider" />

@@ -1,0 +1,23 @@
+.footer-card {
+    background-color : #4a4a4a;
+    width:100%;
+    height: auto;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:not(:last-child):after {
+    content: "|";
+    margin: 0 20px;
+}
+
+.icon-size {
+    font-size: 2em;
+    cursor: pointer;
+}

@@ -2,7 +2,7 @@
     <mat-toolbar-row fxLayout="row" fxLayoutGap="10px">
         <div fxFlex="5%"></div>
         <div fxFlex="15%"><img src="../../assets/images/logo.png" class="logo"></div>
-        <div fxFlex="45%" fxLayout="row" fxLayoutGap="30px" >
+        <div fxFlex="35%" fxLayout="row" fxLayoutGap="30px" >
             <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true)">
                 Man
             </div>
@@ -14,8 +14,8 @@
             </div>
             <app-menus-dropdown *ngIf="flags.showMenuDropDown" (mouseleave)="changeMenuDropdownVisibility(false)"></app-menus-dropdown>
         </div>
-        <div fxFlex="20%"><search-bar></search-bar></div>
-        <div fxFlex="2%"><mat-icon class="login" [matMenuTriggerFor]="menu">account_box</mat-icon>
+        <div fxFlex="30%"><search-bar></search-bar></div>
+        <div fxFlex="2%"><mat-icon  matTooltip="User Details" class="login" [matMenuTriggerFor]="menu">account_box</mat-icon>
             <mat-menu #menu="matMenu" class="profile-menu" [overlapTrigger]="false">
                 <div fxLayout="column" fxLayoutGap="10px">
                     <div fxLayout="column" fxLayoutGap="10px">
@@ -36,10 +36,11 @@
             </mat-menu>
         </div>
         <div fxFlex="2%">
-            <mat-icon class="cart" matBadge="2" matBadgeColor="warn">shopping_cart</mat-icon>
-
+            <mat-icon class="wishList"  matTooltip="Wish List">favorite</mat-icon>
+        </div>
+        <div fxFlex="2%">
+            <mat-icon  matTooltip="Cart" class="cart" matBadge="2" matBadgeColor="warn">shopping_cart</mat-icon>
         </div>
         <div fxFlex="5%"></div>
-        <!--<mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>-->
     </mat-toolbar-row>
 </mat-toolbar>

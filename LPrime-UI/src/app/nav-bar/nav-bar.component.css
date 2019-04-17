@@ -17,7 +17,7 @@
     height: 50px;
 }
 
-.login:hover, .cart:hover {
+.login:hover, .cart:hover, .wishList:hover {
     cursor: pointer;
 }
 

@@ -21,9 +21,18 @@
     cursor: pointer;
 }
 
-.profile-menu {
+.profile-menu-card {
     padding: 5px;
     min-width : 250px;
+    z-index : 99;
+    font-size: 14px;
+    top: 139px;
+    right: 300%;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.profile-card-content {
+    padding: 10px;
 }
 
 .active {

@@ -5,6 +5,7 @@
     left: 17%;
     height: 350px;
     z-index : 999;
+    overflow: auto;
 }
 
 .menu-dropdown {

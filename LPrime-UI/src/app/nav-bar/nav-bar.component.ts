@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
   readonly constants = consts;
   flags = {
     showMenuDropDown : false,
-    classActive: false
+    showProfileMenu : false
   };
 
   constructor() { }
@@ -19,9 +19,13 @@ export class NavBarComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeMenuDropdownVisibility (state) {
+  changeMenuDropdownVisibility (state, gender) {
     this.flags.showMenuDropDown = state;
-    this.flags.classActive = state;
+    console.log("Gender - " + gender)
+  }
+
+  changeProfileMenuVisibility (state) {
+    this.flags.showProfileMenu = state;
   }
 
 

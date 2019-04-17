@@ -1,0 +1,29 @@
+
+.mat-toolbar {
+    background: white;
+    color: deeppink;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    width: 50%;
+    height: 50px;
+}
+
+.login:hover, .cart:hover {
+    cursor: pointer;
+}
+
+.profile-menu {
+    padding: 5px;
+    min-width : 250px;
+}
+
+.active {
+    -webkit-box-shadow: 0 8px 0 0 pink;
+    -moz-box-shadow: 0 8px 0 0 pink;
+    box-shadow: 0 8px 0 0 pink;
+}

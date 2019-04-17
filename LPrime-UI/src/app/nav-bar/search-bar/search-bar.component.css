@@ -1,0 +1,25 @@
+.search-bar {
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+input[type=text] {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 12px 9px;
+    background-repeat: no-repeat;
+    padding: 6px 15px 2px 37px;
+    background-image: url('../../../assets/images/search-icon.png');
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+    outline: none;
+}

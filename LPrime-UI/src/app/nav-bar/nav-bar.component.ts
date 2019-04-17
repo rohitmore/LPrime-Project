@@ -9,10 +9,21 @@ import * as consts from '../constants/string-constants';
 export class NavBarComponent implements OnInit {
 
   readonly constants = consts;
+  flags = {
+    showMenuDropDown : false,
+    classActive: false
+  };
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  changeMenuDropdownVisibility (state) {
+    this.flags.showMenuDropDown = state;
+    this.flags.classActive = state;
+  }
+
+
 
 }

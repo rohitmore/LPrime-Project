@@ -8,6 +8,10 @@
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
 }
 
+.menu-header {
+    cursor: pointer;
+}
+
 .logo {
     width: 50%;
     height: 50px;
@@ -26,4 +30,5 @@
     -webkit-box-shadow: 0 8px 0 0 pink;
     -moz-box-shadow: 0 8px 0 0 pink;
     box-shadow: 0 8px 0 0 pink;
+    padding-bottom: 16px;
 }

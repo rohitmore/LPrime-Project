@@ -2,17 +2,17 @@
     <mat-toolbar-row fxLayout="row" fxLayoutGap="10px">
         <div fxFlex="5%"></div>
         <div fxFlex="15%"><img src="../../assets/images/logo.png" class="logo"></div>
-        <div fxFlex="45%" fxLayout="row" fxLayoutGap="30px">
-            <div class="active">
+        <div fxFlex="45%" fxLayout="row" fxLayoutGap="30px" >
+            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true)">
                 Man
             </div>
-            <div>
+            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true)">
                 Women
             </div>
-            <div>
+            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true)">
                 Store
             </div>
-            <app-menus-dropdown></app-menus-dropdown>
+            <app-menus-dropdown *ngIf="flags.showMenuDropDown" (mouseleave)="changeMenuDropdownVisibility(false)"></app-menus-dropdown>
         </div>
         <div fxFlex="20%"><search-bar></search-bar></div>
         <div fxFlex="2%"><mat-icon class="login" [matMenuTriggerFor]="menu">account_box</mat-icon>

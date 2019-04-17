@@ -3,14 +3,22 @@
     outline: none;
 }
 
-.background-grey {
+
+.body-config {
     background-color: #FEEDF6;
+    padding-bottom: 30px;
 }
 
-.facebook-button .google-button {
+.facebook-button {
     color: darkblue;
-    font-size: 33px !important;
-    margin-right: 10px;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.google-button {
+    color: darkblue;
+    font-size: 2em;
+    margin-right: 5px;
 }
 
 .login-card {

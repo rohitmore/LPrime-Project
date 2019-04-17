@@ -18,20 +18,20 @@
           </mat-form-field>
 
           <mat-form-field class="full-width">
-            <input matInput placeholder="Password" type="password" [formControl]="passwordFormControl">
+            <input matInput stringTrimmer placeholder="Password" type="password" [formControl]="passwordFormControl">
             <mat-error *ngIf="passwordFormControl.hasError('required')">
               Password is <strong>required</strong>
             </mat-error>
           </mat-form-field>
 
-          <button mat-raised-button color="accent" class="full-width">Login</button>
+          <button mat-raised-button color="accent" class="full-width" (click)="clicked()">Login</button>
         </form>
 
         <hr class="line-divider" />
 
         <div fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between center">
           <a href="/forget-password" class="no-outline">Forget Password </a>
-          <a href="/sign-up" class="no-outline">Sign up</a>
+          <a href="/register" class="no-outline">Sign up</a>
         </div>
 
         <hr class="line-divider" />

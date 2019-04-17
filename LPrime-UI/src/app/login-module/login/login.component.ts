@@ -45,6 +45,11 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  clicked() :void {
+    console.log("inside Sign In");
+    console.log("Data - " + this.passwordFormControl.value) ;
+  }
+
   signOut(): void {
     this.authService.signOut();
   }

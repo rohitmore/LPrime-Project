@@ -8,6 +8,7 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RegistrationComponent } from './registration/registration.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import {SharedModule} from "../common/shared.module";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
       MaterialModule,
       FlexLayoutModule,
       FormsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      SharedModule
   ]
 })
 export class LoginModule { }

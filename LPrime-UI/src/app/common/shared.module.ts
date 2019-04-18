@@ -6,6 +6,9 @@ import {StringTrimmerDirective} from "./directive/string-trimmer/string-trimmer.
     StringTrimmerDirective
   ],
   imports: [ ],
-  providers: [ ]
+  providers: [ ],
+  exports: [
+    StringTrimmerDirective
+  ]
 })
 export class SharedModule { }

@@ -15,6 +15,7 @@ import { MenusDropdownComponent } from './nav-bar/menus-dropdown/menus-dropdown.
 import { LoginModule } from "./login-module/login.module";
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import {SharedModule} from "./common/shared.module";
+import {ProductGridModule} from "./product-grid/product-grid.module";
 
 let config = new AuthServiceConfig([
   {
@@ -48,7 +49,8 @@ export function provideConfig() {
     SocialLoginModule,
     FlexLayoutModule,
     LoginModule,
-    SharedModule
+    SharedModule,
+    ProductGridModule
   ],
   providers: [
     {

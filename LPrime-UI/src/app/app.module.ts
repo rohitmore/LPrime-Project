@@ -14,8 +14,8 @@ import { SearchBarComponent } from './nav-bar/search-bar/search-bar.component';
 import { MenusDropdownComponent } from './nav-bar/menus-dropdown/menus-dropdown.component';
 import { LoginModule } from "./login-module/login.module";
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
-import {SharedModule} from "./common/shared.module";
-import {ProductGridModule} from "./product-grid/product-grid.module";
+import { SharedModule } from "./common/shared.module";
+import { ProductGridModule } from "./product-grid/product-grid.module";
 
 let config = new AuthServiceConfig([
   {

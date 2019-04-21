@@ -1,0 +1,14 @@
+.product-layout {
+    width: 200px;
+    height: 350px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 22px 1px rgba(0,0,0,.2)
+}
+
+mat-card img{
+    object-fit: cover;
+}
+
+mat-card {
+    padding: 0px !important;;
+}

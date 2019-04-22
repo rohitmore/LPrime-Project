@@ -1,0 +1,12 @@
+.mat-list-item {
+    height: 25px !important;
+}
+
+.filter-list {
+    border: 1px solid lightgrey;
+    padding: 16px;
+}
+
+.filter-list > h3 {
+    font-weight: 700;
+}

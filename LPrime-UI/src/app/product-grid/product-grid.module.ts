@@ -7,11 +7,13 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {SharedModule} from "../common/shared.module";
 import {MaterialModule} from "../material-module/material.module";
 import { ProductComponent } from './product/product.component';
+import { SideFilterComponent } from './side-filter/side-filter.component';
 
 @NgModule({
   declarations: [
       ProductGridComponent,
-      ProductComponent
+      ProductComponent,
+      SideFilterComponent
   ],
   imports: [
     CommonModule,

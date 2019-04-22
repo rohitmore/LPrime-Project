@@ -10,7 +10,7 @@ import * as consts from '../../constants/string-constants';
 export class ProductComponent implements OnInit {
 
   constants = consts;
-  durationInSeconds = 5;
+  durationInSeconds = 15;
 
   constructor(private snackBar: MatSnackBar) { }
 
@@ -20,6 +20,7 @@ export class ProductComponent implements OnInit {
   addToWishList(message: string, action: string) {
       this.snackBar.open(message, action, {
         duration: this.durationInSeconds * 1000,
+        panelClass: ['snack-bar']
       });
     }
   }

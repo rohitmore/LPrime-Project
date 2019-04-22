@@ -8,10 +8,10 @@
     <div class="add-to-cart" fxLayout="column" fxLayoutGap="20px">
       <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
         <button mat-mini-fab class="mini-button">
-          <mat-icon>favorite</mat-icon>
+          <mat-icon matTooltip="Add To Wishlist" (click)="addToWishList(constants.ADD_TO_WISHLIST, 'OK')">favorite</mat-icon>
         </button>
         <button mat-mini-fab class="mini-button">
-          <mat-icon>shopping-cart</mat-icon>
+          <mat-icon matTooltip="Add To Cart">shopping-cart</mat-icon>
         </button>
       </div>
       <div class="sizes">Size : M, XL</div>

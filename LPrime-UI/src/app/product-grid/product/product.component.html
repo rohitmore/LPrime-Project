@@ -1,4 +1,26 @@
 <mat-card fxLayout="column" class="product-layout">
-  <img fxFlex="80%" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-7.jpg">
-  <div fxFlex="20%"></div>
+  <img class="product-image" fxFlex="80%" src="http://bestjquery.com/tutorial/product-grid/demo9/images/img-5.jpg">
+  <div fxFlex="12%" class="product-info">
+    <div class="product-intro" fxLayoutAlign="center center" fxLayout="column">
+      <div class="brand-name">ADIDAS</div>
+      <div class="product-description">Women Stripped Top</div>
+    </div>
+    <div class="add-to-cart" fxLayout="column" fxLayoutGap="20px">
+      <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+        <button mat-mini-fab class="mini-button">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-mini-fab class="mini-button">
+          <mat-icon>shopping-cart</mat-icon>
+        </button>
+      </div>
+      <div class="sizes">Size : M, XL</div>
+    </div>
+  </div>
+  <div fxFlex="5%" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="actual-price">Rs. 779</div>
+    <div class="previous-price">Rs. 779</div>
+    <div class="discount">( 40% OFF)</div>
+  </div>
+  <div fxFlex="3%"></div>
 </mat-card>

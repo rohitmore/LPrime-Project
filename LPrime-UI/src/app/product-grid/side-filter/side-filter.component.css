@@ -5,6 +5,9 @@
 .filter-list {
     border: 1px solid lightgrey;
     padding: 16px;
+    width: 210px;
+    position: fixed;
+    opacity: 1;
 }
 
 .filter-list > h3 {

@@ -8,12 +8,14 @@ import {SharedModule} from "../common/shared.module";
 import {MaterialModule} from "../material-module/material.module";
 import { ProductComponent } from './product/product.component';
 import { SideFilterComponent } from './side-filter/side-filter.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
 
 @NgModule({
   declarations: [
       ProductGridComponent,
       ProductComponent,
-      SideFilterComponent
+      SideFilterComponent,
+      ProductInfoComponent
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,9 @@ import { SideFilterComponent } from './side-filter/side-filter.component';
     SharedModule,
     MaterialModule,
     ProductGridRoutingModule
-  ]
+  ],
+    exports: [
+        ProductComponent
+    ]
 })
 export class ProductGridModule { }

@@ -3,6 +3,14 @@
     margin-right: 100px;
 }
 
+.brand-name {
+    font-size : 25px;
+}
+
+.brand-type {
+    font-size: 20px;
+}
+
 .product-images{
     height: 550px;
 }
@@ -10,4 +18,52 @@
 .main-image {
     width:100%;
     height:100%;
+}
+
+.actual-price {
+    font-size: 40px;
+    font-weight: 400;
+    color: #086fcf;
+}
+
+.previous-price {
+    color: grey;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.discount {
+    color : red;
+    font-size: 20px
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    width : 60%;
+}
+
+.size-button {
+    background-color: white;
+    border-color : #086fcf;
+    color: #086fcf;
+    outline : none;
+    -webkit-box-shadow: 0 0 2px #086fcf;
+    -moz-box-shadow: 0 0 2px  #086fcf;
+    box-shadow: 0 0 2px #086fcf;
+}
+
+.size-button:focus {
+    -webkit-box-shadow: 0 0 10px #086fcf;
+    -moz-box-shadow: 0 0 10px  #086fcf;
+    box-shadow: 0 0 10px #086fcf;
+}
+
+.action-button {
+    height: 50px;
+    font-size: 20px;
+}
+
+.action-button mat-icon:last-child {
+    margin-right: 10px;
 }

@@ -1,14 +1,78 @@
-<div fxLayout="row" class="product-info">
-  <div fxFlex="50%" fxLayout="row" fxLayoutGap="5px" class="product-images">
-    <div fxFlex="15%" fxLayout="column" fxLayoutAlign="space-between center">
-      <img class="main-image" fxFlex="24%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/product_1024x1024.png?v=1446769025">
-      <img class="main-image" fxFlex="24%"  src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko1_1024x1024.jpg?v=1447104179">
-      <img class="main-image" fxFlex="24%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko2_1024x1024.jpg?v=1447104180">
-      <img class="main-image" fxFlex="24%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182">
+<div fxLayout="column" fxLayoutGap="20px">
+  <div fxLayout="row" class="product-info">
+    <div fxFlex="40%" fxLayout="row" fxLayoutGap="5px" class="product-images">
+      <div fxFlex="15%" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="5px">
+        <img class="main-image" fxFlex="20%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/product_1024x1024.png?v=1446769025">
+        <img class="main-image" fxFlex="20%"  src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko1_1024x1024.jpg?v=1447104179">
+        <img class="main-image" fxFlex="20%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko2_1024x1024.jpg?v=1447104180">
+        <img class="main-image" fxFlex="20%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182">
+      </div>
+      <div fxFlex="80%">
+        <img class="main-image" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182">
+        <!--<ngx-image-zoom [z-->
+                <!--[thumbImage]="'https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182'"-->
+                <!--[fullImage]="'https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182'"-->
+        <!--&gt;</ngx-image-zoom>-->
+      </div>
     </div>
-    <div fxFlex="80%">
-      <img class="main-image" src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko3_1024x1024.jpg?v=1447104182">
+    <div fxFlex="60%" fxLayout="column" fxLayoutGap="20px">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title class="brand-name">ADIDAS</mat-card-title>
+          <mat-card-subtitle class="brand-type">Fancy Tshirt</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content fxLayout="column" fxLayoutGap="25px">
+          <div fxLayout="row" fxLayoutAlign="left center" fxLayoutGap="20px">
+            <div class="actual-price">Rs. 799.00</div>
+            <div class="previous-price">Rs. 1799</div>
+            <div class="discount">(40 % OFF)</div>
+          </div>
+          <hr class="divider"/>
+          <div fxLayout="row" fxLayoutGap="30px">
+            <div fxLayout="column" fxLayoutGap="10px">
+              <div>SIZES</div>
+              <div fxLayout="row" fxLayoutGap="15px">
+                <button class="size-button" mat-fab>S</button>
+                <button class="size-button" mat-fab>M</button>
+                <button class="size-button" mat-fab>L</button>
+                <button class="size-button" mat-fab>XL</button>
+                <button class="size-button" mat-fab disabled>XXL</button>
+              </div>
+            </div>
+            <div style="border-right: 1px solid grey"></div>
+            <div fxLayout="column" fxLayoutGap="10px">
+              <div>OFFERS</div>
+              <pre>
++ Pay by Paytm - Get 20% Cashback
++ Pay by Mobikwik - Get 10% Mobikwik Cashback
+              </pre>
+            </div>
+          </div>
+          <div fxLayout="row" fxLayoutAlign="space-around center"  fxLayoutGap="20px">
+            <button class="action-button" fxFlex="70" mat-raised-button color="accent"><mat-icon>shopping_basket</mat-icon>Add to Cart</button>
+            <button class="action-button" fxFlex="20" mat-raised-button><mat-icon>bookmark</mat-icon>Wishlist</button>
+          </div>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Product Information</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>General Information</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-tab-group>
+            <mat-tab label="Brand">Brand </mat-tab>
+            <mat-tab label="Supplier"> Supplier</mat-tab>
+          </mat-tab-group>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
-  <div fxFlex="50%">Description</div>
+  <div>
+    SIMILAR PRODUCTS
+  </div>
 </div>

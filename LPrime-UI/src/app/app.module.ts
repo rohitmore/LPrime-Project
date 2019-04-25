@@ -16,6 +16,7 @@ import { LoginModule } from "./login-module/login.module";
 import { NavFooterComponent } from './nav-footer/nav-footer.component';
 import { SharedModule } from "./common/shared.module";
 import { ProductGridModule } from "./product-grid/product-grid.module";
+import {NgxImageZoomModule} from "ngx-image-zoom";
 
 let config = new AuthServiceConfig([
   {
@@ -44,6 +45,7 @@ export function provideConfig() {
   imports: [
     MaterialModule,
     BrowserModule,
+    NgxImageZoomModule.forRoot(),
     AppRoutingModule,
     BrowserAnimationsModule,
     SocialLoginModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatSnackBar} from "@angular/material";
 import * as consts from '../../constants/string-constants';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-product',
@@ -12,7 +13,8 @@ export class ProductComponent implements OnInit {
   constants = consts;
   durationInSeconds = 15;
 
-  constructor(private snackBar: MatSnackBar) { }
+  constructor(private snackBar: MatSnackBar,
+              private router: Router) { }
 
   ngOnInit() {
   }

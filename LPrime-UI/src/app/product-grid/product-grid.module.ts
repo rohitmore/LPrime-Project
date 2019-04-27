@@ -10,6 +10,7 @@ import { ProductComponent } from './product/product.component';
 import { SideFilterComponent } from './side-filter/side-filter.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
 import {NgxImageZoomModule} from "ngx-image-zoom";
+import {SlideshowModule} from "ng-simple-slideshow";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {NgxImageZoomModule} from "ngx-image-zoom";
     FlexLayoutModule,
     SharedModule,
     MaterialModule,
+    SlideshowModule,
     ProductGridRoutingModule
   ],
     exports: [

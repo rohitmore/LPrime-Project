@@ -1,6 +1,6 @@
 <div fxLayout="column" fxLayoutGap="20px">
   <div fxLayout="row" fxLayout.xs="column" class="product-info">
-    <div fxFlex="40%" fxLayout="row" fxLayoutGap="5px" class="product-images">
+    <div fxFlex="40%" fxLayout="row" fxLayoutGap="5px" fxHide.xs class="product-images">
       <div fxFlex="15%" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="5px">
         <img class="main-image" fxFlex="20%" src="https://cdn.shopify.com/s/files/1/1047/6452/products/product_1024x1024.png?v=1446769025">
         <img class="main-image" fxFlex="20%"  src="https://cdn.shopify.com/s/files/1/1047/6452/products/tricko1_1024x1024.jpg?v=1447104179">
@@ -15,14 +15,14 @@
         <!--&gt;</ngx-image-zoom>-->
       </div>
     </div>
-    <!--<div fxFlex.xs="40%" fxShow.xs>-->
-      <!--<slideshow-->
-              <!--[minHeight]="'525px'"-->
-              <!--[autoPlay]="true"-->
-              <!--[showArrows]="true"-->
-              <!--[imageUrls]="images">-->
-      <!--</slideshow>-->
-    <!--</div>-->
+    <div fxFlex.xs="40%" fxShow.xs>
+      <slideshow
+              [minHeight]="'525px'"
+              [autoPlay]="true"
+              [showArrows]="true"
+              [imageUrls]="images">
+      </slideshow>
+    </div>
     <div fxFlex="60%" fxLayout="column" fxLayoutGap="20px">
       <mat-card>
         <mat-card-header>
@@ -57,8 +57,9 @@
             </div>
           </div>
           <div fxLayout="row" fxLayoutAlign="space-around center"  fxLayoutGap="20px">
-            <button class="action-button" fxFlex="70" fxFlex.xs="50" mat-raised-button color="accent"><mat-icon>shopping_basket</mat-icon>Add to Cart</button>
-            <button class="action-button" fxFlex="20" fxFlex.xs="50" mat-raised-button><mat-icon>bookmark</mat-icon>Wishlist</button>
+            <button (click)="addToCart(constants.ADD_TO_CART)" class="action-button" fxFlex="70" fxFlex.xs="50" mat-raised-button color="accent">
+              <mat-icon>shopping_basket</mat-icon>Add to Cart</button>
+            <button (click)="addToWishList(constants.ADD_TO_WISHLIST)" class="action-button" fxFlex="20" fxFlex.xs="50" mat-raised-button><mat-icon>bookmark</mat-icon>Wishlist</button>
           </div>
         </mat-card-content>
       </mat-card>

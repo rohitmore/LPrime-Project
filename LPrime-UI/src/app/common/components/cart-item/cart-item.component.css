@@ -1,0 +1,28 @@
+.cart-item {
+    background: #fff;
+    font-size: 14px;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.cart-item img {
+    background: rgb(244, 255, 249);
+    height: 160px;
+    width: 120px;
+}
+
+.cart-item .cart-item-left {
+    float: left;
+    width: 20%;
+}
+
+.cart-item .cart-item-right {
+    padding: 10px 10px 1px;
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    min-height: 160px;
+}

@@ -25,14 +25,14 @@ export class ProductInfoComponent implements OnInit {
   ngOnInit() {
   }
 
-  addToWishList(message: string, action?: string) {
+  addToWishList(message: string, action: string) {
     this.snackBar.open(message, action, {
       duration: this.durationInSeconds * 1000,
       panelClass: ['snack-bar']
     });
   }
 
-  addToCart(message: string, action?: string) {
+  addToCart(message: string, action: string) {
     this.snackBar.open(message, action, {
       duration: this.durationInSeconds * 1000,
       panelClass: ['snack-bar']

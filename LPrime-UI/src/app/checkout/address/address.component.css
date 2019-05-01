@@ -1,0 +1,23 @@
+
+.address-layout {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+}
+
+.dashed-border {
+    border: dashed 1px black;
+}
+
+.solid-border {
+    border: solid 1px black;
+}
+
+.mat-icon {
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.full-width {
+    width: 100%;
+}

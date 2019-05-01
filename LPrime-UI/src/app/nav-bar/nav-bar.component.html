@@ -4,13 +4,13 @@
         <div fxFlex="15%"><img src="../../assets/images/logo.png" class="logo"></div>
         <div fxFlex="35%" fxLayout="row" fxLayoutGap="30px" >
             <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'men')">
-                Man
+                MEN
             </div>
             <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'women')">
-                Women
+                WOMEN
             </div>
             <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'store')">
-                Store
+                STORE
             </div>
             <app-menus-dropdown
                     *ngIf="flags.showMenuDropDown"
@@ -21,7 +21,7 @@
         </div>
         <div fxFlex="2%"><mat-icon (mouseover)="changeProfileMenuVisibility(true)" matTooltip="Profile" class="login">account_box</mat-icon></div>
         <div fxFlex="2%">
-            <mat-icon class="wishList"  matTooltip="Wish List">bookmark</mat-icon>
+            <mat-icon class="wishList"  matTooltip="Wish List" [routerLink]="['wishlist']">bookmark</mat-icon>
         </div>
         <div fxFlex="2%">
             <a href="/cart">

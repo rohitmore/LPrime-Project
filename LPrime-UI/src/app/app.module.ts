@@ -19,6 +19,9 @@ import { SharedModule } from "./common/shared.module";
 import { ProductGridModule } from "./product-grid/product-grid.module";
 import {NgxImageZoomModule} from "ngx-image-zoom";
 import {SlideshowModule} from "ng-simple-slideshow";
+import { WishlistComponent } from './wishlist/wishlist.component';
+import { HomeComponent } from './home/home.component';
+import {CheckoutModule} from "./checkout/checkout.module";
 
 let config = new AuthServiceConfig([
   {
@@ -42,10 +45,13 @@ export function provideConfig() {
     NavBarComponent,
     SearchBarComponent,
     MenusDropdownComponent,
-    NavFooterComponent
+    NavFooterComponent,
+    WishlistComponent,
+    HomeComponent
   ],
   imports: [
     MaterialModule,
+    CommonModule,
     BrowserModule,
     NgxImageZoomModule.forRoot(),
     AppRoutingModule,
@@ -56,7 +62,7 @@ export function provideConfig() {
     LoginModule,
     SharedModule,
     ProductGridModule,
-    CommonModule
+    CheckoutModule
   ],
   providers: [
     {

@@ -4,23 +4,19 @@ import { BackToTopComponent } from './components/back-to-top/back-to-top.compone
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {MaterialModule} from "../material-module/material.module";
-import { CartComponent } from './components/cart/cart.component';
-import { CartItemComponent } from './components/cart-item/cart-item.component';
+import {FlexLayoutModule} from "@angular/flex-layout";
+
 
 @NgModule({
   declarations: [
     StringTrimmerDirective,
     BackToTopComponent,
-    CartComponent,
-    CartItemComponent
   ],
-  imports: [ BrowserModule, FormsModule, MaterialModule ],
+  imports: [ BrowserModule, FormsModule, MaterialModule, FlexLayoutModule ],
   providers: [ ],
   exports: [
     StringTrimmerDirective,
-    BackToTopComponent,
-    CartComponent,
-    CartItemComponent
+    BackToTopComponent
   ]
 })
 export class SharedModule { }

@@ -1,13 +1,28 @@
-
 <div fxLayout="column">
   <slideshow
-          [minHeight]="'600px'"
+          [minHeight]="'550px'"
           [autoPlay]="true"
           [showArrows]="true"
           [showDots]="true"
           [backgroundSize]="'contain'"
           [imageUrls]="images">
   </slideshow>
+
+  <div fxLayout="row" style="background-color: blue; height: 70px">
+    <div fxFlex="34" class="secure-payment-delivery" fxLayoutAlign="center center"><mat-icon class="font-size: 25px">credit_card</mat-icon>FAST SECURE PAYMENTS</div>
+    <div fxFlex="34" class="premium-products" fxLayoutAlign="center center">PREMIUM PRODUCTS</div>
+    <div fxFlex="34" class="secure-payment-delivery" fxLayoutAlign="center center"><mat-icon class="font-size: 25px">credit_card</mat-icon>FREE AND FAST DELIVERY</div>
+  </div>
+
+  <div class="poster-video">
+    <video id="video" style="width:100%; height:100%" autoplay volume="0" loop>
+      <source src="./../../assets/video/model-video.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+
+
   <mat-grid-list cols="4" rowHeight="100px">
     <mat-grid-tile
             *ngFor="let tile of tiles"

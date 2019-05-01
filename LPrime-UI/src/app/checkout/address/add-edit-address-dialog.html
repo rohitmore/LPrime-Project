@@ -1,17 +1,18 @@
 <div  class="addressForm" fxLayout="column" fxLayoutAlign="space-around center">
-        <mat-card-title>Add New Address</mat-card-title>
+    <div>
+        <label style="font-weight: 700">ADD NEW ADDRESS</label>
+    </div>
         <form [formGroup]="addressForm" (ngSubmit)="submitAddress()">
-            <mat-form-field class="full-width">
-                <input matInput placeholder="Name" formControlName="name">
-            </mat-form-field>
+            <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px">
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Name" formControlName="name">
+                </mat-form-field>
 
-            <mat-form-field class="full-width">
-                <input matInput placeholder="Mobile No" formControlName="mobileNo">
-            </mat-form-field>
+                <mat-form-field class="full-width">
+                    <input matInput placeholder="Mobile No" formControlName="mobileNo">
+                </mat-form-field>
+            </div>
 
-            <mat-form-field class="full-width">
-                <input matInput placeholder="Pin code" formControlName="pinCode">
-            </mat-form-field>
 
             <mat-form-field class="full-width">
                 <input matInput placeholder="Address ( Housing No / Flat Number/ Office Number )" formControlName="address">
@@ -21,6 +22,7 @@
                 <input matInput placeholder="Society / Office Name" formControlName="societyName">
             </mat-form-field>
 
+            <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px">
             <mat-form-field class="full-width">
                 <input matInput placeholder="Locality / Town" formControlName="locality">
             </mat-form-field>
@@ -28,17 +30,24 @@
             <mat-form-field class="full-width">
                 <input matInput placeholder="City / District" formControlName="city">
             </mat-form-field>
+            </div>
 
+            <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="10px">
             <mat-form-field class="full-width">
                 <input matInput placeholder="State" formControlName="state">
             </mat-form-field>
+
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Pin code" formControlName="pinCode">
+            </mat-form-field>
+            </div>
 
             <mat-form-field class="full-width">
                 <input matInput placeholder="Country" value="India" disabled>
             </mat-form-field>
 
             <div fxLayout="row" fxLayoutAlign="space-around center">
-                <button mat-raised-button type="submit" color="accent" cdkFocusInitial> Submit </button>
+                <button mat-raised-button type="submit" color="accent" cdkFocusInitial> Create </button>
                 <button mat-raised-button> Cancel </button>
             </div>
         </form>

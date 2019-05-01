@@ -1,7 +1,7 @@
 <mat-toolbar>
     <mat-toolbar-row fxLayout="row" fxLayoutGap="10px">
         <div fxFlex="5%"></div>
-        <div fxFlex="15%"><img src="../../assets/images/logo.png" class="logo"></div>
+        <div fxFlex="15%" style="outline: none" [routerLink]="['home']"><img src="../../assets/images/logo.png" class="logo"></div>
         <div fxFlex="35%" fxLayout="row" fxLayoutGap="30px" >
             <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'men')">
                 MEN
@@ -29,12 +29,12 @@
             </a>
         </div>
         <div fxFlex="5%">
-            <mat-card class="profile-menu-card" (mouseleave)="changeProfileMenuVisibility(false)" *ngIf="flags.showProfileMenu">
+            <mat-card class="profile-menu-card" (click)="changeProfileMenuVisibility(false)" (mouseleave)="changeProfileMenuVisibility(false)" *ngIf="flags.showProfileMenu">
                 <mat-card-header>
                     <mat-card-title> Welcome </mat-card-title>
                     <mat-card-subtitle fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around center">
-                        <a href="/register" mat-raised-button>Sign up</a>
-                        <a href="/login" mat-raised-button color="accent">Login</a>
+                        <a [routerLink]="['register']" mat-raised-button>Sign up</a>
+                        <a [routerLink]="['login']" mat-raised-button color="accent">Login</a>
                     </mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content class="profile-card-content">

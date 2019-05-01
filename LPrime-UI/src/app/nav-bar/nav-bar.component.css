@@ -15,6 +15,7 @@
 .logo {
     width: 50%;
     height: 50px;
+    cursor: pointer;
 }
 
 .login:hover, .cart:hover, .wishList:hover {

@@ -25,7 +25,7 @@ export class AddressComponent implements OnInit {
   openAddAddressDialog(): void {
     console.log("inside open Add");
     const dialogRef = this.dialog.open(AddEditAddressDialog, {
-      width: '300px', height:'450px',
+      width: '450px', height:'450px',
       data: {name: this.name, animal: this.animal}
     });
 

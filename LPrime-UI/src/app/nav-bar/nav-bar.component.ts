@@ -21,7 +21,6 @@ export class NavBarComponent implements OnInit {
 
   changeMenuDropdownVisibility (state, gender) {
     this.flags.showMenuDropDown = state;
-    console.log("Gender - " + gender)
   }
 
   changeProfileMenuVisibility (state) {

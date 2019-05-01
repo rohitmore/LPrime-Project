@@ -5,9 +5,13 @@ import {WishlistComponent} from "./wishlist/wishlist.component";
 import {HomeComponent} from "./home/home.component";
 
 const routes: Routes = [
-    { path : "", component : HomeComponent},
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path : 'home', component : HomeComponent},
     { path: 'cart', component: CartComponent },
-    { path: 'wishlist', component: WishlistComponent }
+    { path: 'wishlist', component: WishlistComponent },
+
+    // Wild Route
+    //{ path : "**", component : HomeComponent},
 ];
 
 @NgModule({

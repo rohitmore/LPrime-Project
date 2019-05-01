@@ -1,0 +1,20 @@
+.secure-payment-delivery {
+    font-size: 25px;
+    background-color: whitesmoke;
+    font-weight: 700;
+}
+
+.premium-products {
+    font-size: 25px;
+    font-weight: 700;
+    background-color: deeppink;
+    color: white;
+}
+
+.poster-video {
+    height: 700px;
+}
+
+video {
+    object-fit: fill;
+}

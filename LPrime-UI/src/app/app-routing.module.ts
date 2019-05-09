@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CartComponent } from './checkout/cart/cart.component';
 import {WishlistComponent} from "./wishlist/wishlist.component";
 import {HomeComponent} from "./home/home.component";
+import {CheckoutComponent} from "./checkout/checkout.component";
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path : 'home', component : HomeComponent},
-    { path: 'cart', component: CartComponent },
+    { path: 'checkout', component: CheckoutComponent },
     { path: 'wishlist', component: WishlistComponent },
 
     // Wild Route

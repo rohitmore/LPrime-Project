@@ -1,52 +1,83 @@
+<!--<mat-toolbar>-->
+    <!--<mat-toolbar-row fxLayout="row" fxLayoutGap="10px">-->
+        <!--<div fxFlex="5%"></div>-->
+        <!--<div fxFlex="15%" style="outline: none" [routerLink]="['home']">-->
+            <!--<img src="../../assets/images/logo.png" class="logo">-->
+        <!--</div>-->
+        <!--<div fxFlex="35%" fxLayout="row" fxLayoutGap="30px" >-->
+            <!--<div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'men')">-->
+                <!--MEN-->
+            <!--</div>-->
+            <!--<div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'women')">-->
+                <!--WOMEN-->
+            <!--</div>-->
+            <!--<div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'store')">-->
+                <!--STORE-->
+            <!--</div>-->
+            <!--<app-menus-dropdown-->
+                    <!--*ngIf="flags.showMenuDropDown"-->
+                    <!--(mouseleave)="changeMenuDropdownVisibility(false)"></app-menus-dropdown>-->
+        <!--</div>-->
+        <!--<div fxFlex="30%">-->
+            <!--<search-bar></search-bar>-->
+        <!--</div>-->
+        <!--<div fxFlex="2%"><mat-icon (mouseover)="changeProfileMenuVisibility(true)" matTooltip="Profile" class="login">account_box</mat-icon></div>-->
+        <!--<div fxFlex="2%">-->
+            <!--<mat-icon class="wishList"  matTooltip="Wish List" [routerLink]="['wishlist']">bookmark</mat-icon>-->
+        <!--</div>-->
+        <!--<div fxFlex="2%">-->
+            <!--<a [routerLink]="['checkout']">-->
+                <!--<mat-icon matTooltip="Cart" class="cart" matBadge="2" matBadgeColor="warn">shopping_cart</mat-icon>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div fxFlex="5%">-->
+            <!--<mat-card class="profile-menu-card" (click)="changeProfileMenuVisibility(false)" (mouseleave)="changeProfileMenuVisibility(false)" *ngIf="flags.showProfileMenu">-->
+                <!--<mat-card-header>-->
+                    <!--<mat-card-title> Welcome </mat-card-title>-->
+                    <!--<mat-card-subtitle fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around center">-->
+                        <!--<a [routerLink]="['register']" mat-raised-button>Sign up</a>-->
+                        <!--<a [routerLink]="['login']" mat-raised-button color="accent">Login</a>-->
+                    <!--</mat-card-subtitle>-->
+                <!--</mat-card-header>-->
+                <!--<mat-card-content class="profile-card-content">-->
+                    <!--<mat-divider></mat-divider>-->
+                    <!--<div>-->
+                        <!--<div>Orders</div>-->
+                        <!--<div>Wish List</div>-->
+                    <!--</div>-->
+                    <!--<mat-divider></mat-divider>-->
+                    <!--<div>Log out</div>-->
+                <!--</mat-card-content>-->
+            <!--</mat-card>-->
+        <!--</div>-->
+    <!--</mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+
 <mat-toolbar>
-    <mat-toolbar-row fxLayout="row" fxLayoutGap="10px">
-        <div fxFlex="5%"></div>
-        <div fxFlex="15%" style="outline: none" [routerLink]="['home']"><img src="../../assets/images/logo.png" class="logo"></div>
-        <div fxFlex="35%" fxLayout="row" fxLayoutGap="30px" >
-            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'men')">
-                MEN
-            </div>
-            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'women')">
-                WOMEN
-            </div>
-            <div class="menu-header" (mouseover)="changeMenuDropdownVisibility(true, 'store')">
-                STORE
-            </div>
-            <app-menus-dropdown
-                    *ngIf="flags.showMenuDropDown"
-                    (mouseleave)="changeMenuDropdownVisibility(false)"></app-menus-dropdown>
+    <mat-toolbar-row fxLayoutAlign="center center" fxHide fxShow.xs>
+        <img src="./../../assets/images/temp-logo.png" style="object-fit: cover">
+    </mat-toolbar-row>
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-around center">
+        <div fxFlex="20" fxHide.xs></div>
+        <div fxFlex="5" fxLayout="column" fxLayoutAlign="space-between center" [routerLink]="['home']">
+            <mat-icon>home</mat-icon>
+            <span fxHide.xs>Home</span>
         </div>
-        <div fxFlex="30%">
-            <search-bar></search-bar>
+        <div fxFlex="5" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon>group_work</mat-icon>
+            <span fxHide.xs>Promotions</span>
         </div>
-        <div fxFlex="2%"><mat-icon (mouseover)="changeProfileMenuVisibility(true)" matTooltip="Profile" class="login">account_box</mat-icon></div>
-        <div fxFlex="2%">
-            <mat-icon class="wishList"  matTooltip="Wish List" [routerLink]="['wishlist']">bookmark</mat-icon>
+        <div fxHide.xs fxFlex="40" fxLayout="row" fxLayoutAlign="center center" [routerLink]="['home']">
+            <img src="./../../assets/images/temp-logo.png" style="object-fit: cover">
         </div>
-        <div fxFlex="2%">
-            <a href="/cart">
-                <mat-icon matTooltip="Cart" class="cart" matBadge="2" matBadgeColor="warn">shopping_cart</mat-icon>
-            </a>
+        <div fxFlex="5" fxLayout="column" fxLayoutAlign="space-between center">
+            <mat-icon>account_box</mat-icon>
+            <span fxHide.xs>Account</span>
         </div>
-        <div fxFlex="5%">
-            <mat-card class="profile-menu-card" (click)="changeProfileMenuVisibility(false)" (mouseleave)="changeProfileMenuVisibility(false)" *ngIf="flags.showProfileMenu">
-                <mat-card-header>
-                    <mat-card-title> Welcome </mat-card-title>
-                    <mat-card-subtitle fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="space-around center">
-                        <a [routerLink]="['register']" mat-raised-button>Sign up</a>
-                        <a [routerLink]="['login']" mat-raised-button color="accent">Login</a>
-                    </mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content class="profile-card-content">
-                    <mat-divider></mat-divider>
-                    <div>
-                        <div>Orders</div>
-                        <div>Wish List</div>
-                    </div>
-                    <mat-divider></mat-divider>
-                    <div>Log out</div>
-                </mat-card-content>
-            </mat-card>
+        <div fxFlex="5" fxLayout="column" fxLayoutAlign="space-between center" [routerLink]="['checkout']">
+            <mat-icon>shopping_cart</mat-icon>
+            <span fxHide.xs>Cart</span>
         </div>
+        <div fxHide.xs fxFlex="20" fxFlex.xs="0"></div>
     </mat-toolbar-row>
 </mat-toolbar>

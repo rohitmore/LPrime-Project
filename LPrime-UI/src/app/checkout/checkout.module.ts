@@ -9,6 +9,9 @@ import {AddEditAddressDialog, AddressComponent} from './address/address.componen
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {MaterialModule} from "../material-module/material.module";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {CheckoutComponent} from "./checkout.component";
+import { PaymentComponent } from './payment/payment.component';
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -16,7 +19,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
         CartComponent,
         CartItemComponent,
         AddressComponent,
-        AddEditAddressDialog
+        AddEditAddressDialog,
+        CheckoutComponent,
+        PaymentComponent
   ],
   imports: [
       CommonModule,
@@ -25,12 +30,14 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
       ReactiveFormsModule,
       SharedModule,
       FlexLayoutModule,
-      CheckoutRoutingModule
+      CheckoutRoutingModule,
+      HttpClientModule
   ],
   exports: [
     CartComponent,
     CartItemComponent,
-    AddEditAddressDialog
+    AddEditAddressDialog,
+      CheckoutComponent
   ],
     entryComponents: [
         AddEditAddressDialog

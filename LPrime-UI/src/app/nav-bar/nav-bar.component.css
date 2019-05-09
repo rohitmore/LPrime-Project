@@ -1,11 +1,12 @@
 
 .mat-toolbar {
-    background: white;
-    color: deeppink;
+    background: #353535;
+    color: white;
     position: fixed;
     z-index: 99;
     top: 0;
     box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    font-size: 14px;
 }
 
 .menu-header {
@@ -41,4 +42,15 @@
     -moz-box-shadow: 0 8px 0 0 pink;
     box-shadow: 0 8px 0 0 pink;
     padding-bottom: 16px;
+}
+
+.mat-icon {
+    font-size: 17px;
+    height: 9px;
+    cursor: pointer;
+}
+img {
+    object-fit: cover;
+    height: 55px;
+    width: 180px;
 }

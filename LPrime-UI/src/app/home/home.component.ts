@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
     './../assets/slider/unlimited-wardrobe.jpg',
     './../assets/slider/image-2.jpg',
     './../assets/slider/image-1.jpg',
-    './../assets/slider/image-2.jpg',
+    './../assets/slider/image-3.jpg',
+    './../assets/slider/baner-1.jpg',
   ];
 
   tiles: Tile[] = [

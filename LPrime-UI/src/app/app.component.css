@@ -1,4 +1,9 @@
 .body-margins {
-    margin: 100px 1px 100px 1px;
+    margin: 65px 1px 100px 1px;
+    font-family: Open Sans,Arial,sans-serif;
+}
+
+.body-margins-xs {
+    margin: 110px 1px 100px 1px;
     font-family: Open Sans,Arial,sans-serif;
 }

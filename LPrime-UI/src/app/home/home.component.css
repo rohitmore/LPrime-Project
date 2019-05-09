@@ -18,3 +18,11 @@
 video {
     object-fit: fill;
 }
+
+.poster-height {
+    height: 75px;
+}
+
+.poster-height-xs {
+    height: 150px;
+}

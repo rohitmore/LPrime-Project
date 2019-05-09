@@ -3,6 +3,11 @@
     margin-right: 100px;
 }
 
+.product-info-xs {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .brand-name {
     font-size : 25px;
 }
